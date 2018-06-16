@@ -104,7 +104,6 @@
   &__link {
     display: block;
     margin-top: 0.625em;
-    transition: color 0.125s;
     text-overflow: ellipsis;
     cursor: pointer;
     overflow: hidden;
@@ -228,7 +227,7 @@
         // Site title in main navigation
         &--site {
           position: relative;
-          background-color: $md-color-primary;
+          background-color: $md-color-background;
           color: $md-color-white;
 
           // Site logo
@@ -237,8 +236,7 @@
             position: absolute;
             top: 0.4rem;
             left: 0.4rem;
-            width: 6.4rem;
-            height: 6.4rem;
+            width: 15rem;
             font-size: 4.8rem;
           }
 
@@ -457,7 +455,7 @@
     &__source {
       display: block;
       padding: 0 0.4rem;
-      background-color: mix($md-color-primary, $md-color-black, 75%);
+      background-color: mix($md-color-background, $md-color-black, 75%);
       color: $md-color-white;
     }
   }

@@ -131,7 +131,7 @@ module.exports = env => {
         /* Copy images without cache busting */
         {
           context: "src",
-          from: "assets/images/*.{ico,png}"
+          from: "assets/images/*.{ico,png,svg}"
         },
 
         /* Copy configuration */

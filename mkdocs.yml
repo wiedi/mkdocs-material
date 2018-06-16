@@ -48,16 +48,13 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   feature:
-    tabs: true
+    tabs: false
   palette:
-    primary: indigo
-    accent: indigo
   font:
     text: Roboto
     code: Roboto Mono
   favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
+  logo: 'assets/images/illumos.svg'
 
 # Customization
 extra:

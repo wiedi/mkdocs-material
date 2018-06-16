@@ -137,10 +137,9 @@ kbd {
     color: $md-color-primary;
     word-break: break-word;
 
-    // Also enable color transition on pseudo elements
-    &,
-    &::before {
-      transition: color 0.125s;
+    // Visted links
+    &:visited {
+      color: $md-color-background;
     }
 
     // Hovered and active links

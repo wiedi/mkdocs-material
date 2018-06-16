@@ -48,7 +48,7 @@
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application.d4f923d9.css">
       {% if palette.primary or palette.accent %}
         <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-palette.6079476c.css">
       {% endif %}
@@ -59,17 +59,7 @@
       {% endif %}
     {% endblock %}
     {% block libs %}
-      <script src="{{ base_url }}/assets/javascripts/modernizr.1aa3b519.js"></script>
-    {% endblock %}
-    {% block fonts %}
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-      {% if font != false %}
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{
-              font.text | replace(' ', '+')  + ':300,400,400i,700|' +
-              font.code | replace(' ', '+')
-            }}">
-        <style>body,input{font-family:"{{ font.text }}","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"{{ font.code }}","Courier New",Courier,monospace}</style>
-      {% endif %}
+      <script src="{{ base_url }}/assets/javascripts/modernizr.0c1f321e.js"></script>
     {% endblock %}
     <link rel="stylesheet" href="{{ base_url }}/assets/fonts/material-icons.css">
     {% for path in extra_css %}
@@ -175,7 +165,7 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ base_url }}/assets/javascripts/application.d0060b13.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/application.495d10a2.js"></script>
       {% if lang.t("search.language") != "en" %}
         {% set languages = lang.t("search.language").split(",") %}
         {% if languages | length and languages[0] != "" %}
@@ -200,11 +190,6 @@
       {% for path in extra_javascript %}
         <script src="{{ path }}"></script>
       {% endfor %}
-    {% endblock %}
-    {% block analytics %}
-      {% if config.google_analytics %}
-        {% include "partials/integrations/analytics.html" %}
-      {% endif %}
     {% endblock %}
   </body>
 </html>

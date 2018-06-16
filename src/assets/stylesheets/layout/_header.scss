@@ -30,11 +30,11 @@
   top: 0;
   right: 0;
   left: 0;
-  height: 4.8rem;
+  height: 9.6rem;
   transition:
     background-color 0.25s,
     color 0.25s;
-  background-color: $md-color-primary;
+  background-color: $md-color-background;
   color: $md-color-white;
   box-shadow: none;
   z-index: 2;
@@ -84,6 +84,7 @@
     // Set correct display on image or icon
     &.md-logo * {
       display: block;
+      height: 7rem;
     }
 
     // Hide search icon, if JavaScript is not available.
@@ -201,7 +202,7 @@
       display: block;
       width: 23rem;
       max-width: 23rem;
-      margin-left: 2.8rem;
+      margin-left: 0;
       padding-right: 1.2rem;
 
       // Adjust for RTL languages

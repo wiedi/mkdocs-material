@@ -57,9 +57,14 @@ $break-devices: (
 // Variables: base colors
 // ----------------------------------------------------------------------------
 
+$illumos-default:                     #326ca6 !default;
+$illumos-accent:                      #fc4524 !default;
+$illumos-background:                  #544a58 !default;
+
 // Primary and accent colors
-$md-color-primary:                    $clr-indigo-500 !default;
-$md-color-accent:                     $clr-indigo-a200 !default;
+$md-color-primary:                    $illumos-default !default;
+$md-color-accent:                     $illumos-accent !default;
+$md-color-background:                 $illumos-background !default;
 
 // Shades of black
 $md-color-black:                      hsla(0, 0%, 0%, 0.87) !default;
